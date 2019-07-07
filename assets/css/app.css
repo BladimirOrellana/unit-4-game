@@ -1,0 +1,70 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-image: url("../img/main-backgroung.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.5;
+}
+.main-container{
+   
+   
+    
+
+}
+#myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    
+    
+}
+.title-container{
+    margin-top: 3px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+   
+}
+
+
+.title{
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 50px;
+    color: yellow;
+  text-shadow: 0 0 20px blue; 
+  letter-spacing: 5px;
+    
+}
+.content {
+    position: fixed;
+    top: 70px;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .side{
+      
+  }
+
+  .card{
+      text-align: center;
+      background: transparent;
+      border: none;
+      color: transparent;
+      -webkit-transition: width 2s, height 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 2s;
+  }
+  .card:hover{
+      color: yellow;
+      width: 150px;
+  height: 150px;
+  }
