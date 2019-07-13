@@ -1,47 +1,82 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- Reset CSS -->
-<link rel="stylesheet" href="assets/css/reset.css">
-<!-- GOOGLE FONT -->
-<link href="https://fonts.googleapis.com/css?family=Aguafina+Script|Lobster|Pacifico|Rubik+Mono+One|Russo+One&display=swap" rel="stylesheet">
-  <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha84-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ84/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!--APP CSS-->
-    <link rel="stylesheet" href="assets/css/app.css">
-    <script src="https://code.jquery.com/jquery.js"></script>
+<!DOCTYPE html>
+<html lang="en-us">
 
-    <title>STAR WARS</title>
-  </head>
-  <body>
-      
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RPG games</title>
+    <!--Font style-->
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <!--Linking Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Linking CSS -->
+    <!--link rel="stylesheet" type="text/css" href="assets/css/reset.css"-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<!--Battle space-->
+<body>
+    <div class="container">
+        <!--   <video autoplay muted loop id="myVideo">
+                    <source src="assets/videos/backgroung-video.MP4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+            </video>--> 
+            <audio autoplay id="myAudio">
+                    <source  src="assets/sound/star-wars-sound.m4a" type="audio/ogg">
+                  </audio>
+                
+        <div class="title-container">
+                <h1 class="title">Star Wars</h1>
+        </div>
+        <div class="container-both-score">
+           <div class="score-container">
+             
+           
+    </div>
         
-                <video autoplay muted loop id="myVideo">
-                        <source src="assets/videos/backgroung-video.MP4" type="video/mp4">
-                        Your browser does not support HTML5 video.
-                </video>
-                <audio  id="myAudio">
-                        <source  src="assets/sound/star-wars-sound.m4a" type="audio/ogg">
-                      </audio>
-                      <div class="container-fluid title-container">
-                            <h1 class="title">Star wars </h1>
-                      </div>
-                      <div class=" container-fluid content">
-                       
-                      </div>
-         
-      
-   
-    <!-- Optional JavaScript -->
-    <script src="assets/js/app.js"></script>
+
+    <div id="playerDiv" style="display: inline-flex">
+        <section class="characters" id=boxmaul>
+         <p class="characters-ap" id=maulAP></p>
+        </section>
+        <section class="characters" id=boxluke>
+          <p class="characters-ap" id=lukeAP></p>
+        </section>
+        <section class="characters-ap" class="characters" id=boxobi>
+           <p class="characters-ap" id=obiAP></p>
+        </section>
+        <section class="characters" id=boxmace>
+            
+         <p class="characters-ap" id=maceAP></p>
+        </section>
+    </div>
+    <div class="hidden">
+
+    <div id="second-Div">
+        <h4>YOUR CHARACTER</h4>
+    </div>
+   <div id="attackDiv">
+        <button type="button" id="attack"> Fight </button>
+    </div>
+    <div id="sixth-Div">
+        <h4>DEFENDER</h4>
+    </div>
+    <div id="defenderDiv">
+    </div>
+    <div id="enemyDiv">
+        <h4>ENEMIES AVAILABLE TO ATTACK</h4>
+    </div>
   
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <div id="resetDiv">
+            <button type="button" id="resetbutton"> RESTART </button>
+        </div>
+    </div>
+</div>
    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
+    <!--Link .js file-->
+    <script src="assets/javascript/game.js"></script>
+
+</body>
