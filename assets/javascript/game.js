@@ -26,6 +26,7 @@ var maul = {
     
 };
 console.log(powerAttackValue)
+console.log(counterAttackValue)
 var luke = {
     name: "luke",
     healthPoints: 100,
@@ -200,7 +201,7 @@ var mace = {
             if (playerHealthpoints > 0 && enemyHealthpoints > 0) {
                 line1.text("You attacked " + enemyname + " for " + playerAttackUpdate + " damage");
                 $("#defenderDiv").append(line1);
-                line2.text(enemyname + " attacked you back for " + counterAttackValue + " damage");
+                line2.text(enemyname + " attacked you back for " + enemyAttack + " damage");
                 $("#defenderDiv").append(line2);
             }
             else if (playerHealthpoints <= 0) {
